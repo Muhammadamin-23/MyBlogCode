@@ -1,0 +1,280 @@
+{% block home %}
+{% include 'blog/navbar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<header class="mb-5 pb-5 d-lg-block d-md-none d-sm-none d-xs-none d-none">
+    <ul class="nav nav-pills pb-2 pt-2 mb-7 d-flex justify-content-sm-end flex-wrap bg-black" id="pills-tab"
+        role="tablist">
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-light px-5" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false">About me
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-light px-5" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">Skills
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link text-light px-5" id="pills-disabled-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                    aria-selected="false"
+                    disabled>Portfolio
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active bg-light text-black   rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true"><strong>CONTACT ME</strong></button>
+        </li>
+
+    </ul>
+
+</header>
+
+
+<main class="w-100">
+    <!-- Header section -->
+    <div class="main d-flex justify-content-around pt-5 pt-5 pb-5">
+        <div class="mt-5">
+
+            <img class="mb-5 pb-5 d-lg-block d-md-none d-sm-none d-xs-none d-none" src="/blog/static/images/logo 1.svg"
+                 alt="logo">
+            <h2>Hi, I am</h2>
+            <h1 class="pt-4">Abduhakimov Muhammadamin</h1>
+            <p class="mb-5 pb-5">Back-end developer</p>
+            <div class="mt-5">
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <div class="mt-5 pt-5 d-lg-block d-md-none d-sm-none d-xs-none d-none">
+            <img src="/blog/static/images/photo_2024-02-13_17-42-37.jpg" alt="photo">
+        </div>
+    </div>
+
+    <!-- IT Beries -->
+    <div class="bg-black pt-5 pt-5 pb-5 pb-5 text-light">
+        <h2>IT BERRIES</h2>
+        <p>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus.
+            Sed ornare sit amet lorem sed
+            viverra. In vel urna quis libero viverra facilisis ut ac est. Morbi commodo, eros in dignissim tempus, lacus
+            odio rutrum augue, in semper sem magna quis tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet
+            elit.
+            Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet varius turpis vel pharetra. Ut ante
+            justo,
+            consequat vitae elementum tempor, accumsan nec eros. </p>
+        <div class="d-flex">
+            <p style="padding-right: 25px">|</p>
+            <p>READ MORE</p>
+            <p style="padding-left: 25px;">|</p>
+        </div>
+    </div>
+    <!-- About section1 -->
+    <div>
+        <div class="d-flex justify-content-around w-100 pt-5 pb-5">
+            <button type="button"
+                    class="shadow-lg pb-3 p-3  pt-3  bg-body-tertiary rounded btn btn-outline-dark px-5">
+                <h1>ABOUT ME</h1>
+            </button>
+        </div>
+        <div class="d-flex justify-content-center text-center">
+            <p class="text-center w-50">Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius
+                finibus. Sed ornare sit amet lorem
+                sed viverra. In vel urna quis libero viverra facilisis ut ac est.</p>
+
+        </div>
+        <div class="d-flex justify-content-center pt-5 pb-5">
+            <p style="padding-right: 25px">|</p>
+            <p>READ MORE</p>
+            <p style="padding-left: 25px;">|</p>
+        </div>
+        <div class="d-flex justify-content-center pt-5 pb-5 mb-5">
+            <img src="/blog/static/images/separatorBlack1.png" alt="svg">
+        </div>
+
+        <div>
+            <div class="d-flex justify-content-center pt-5 mx-5 ">
+                <div class="px-5 px-5 text-center">
+                    <h5>DESIGN</h5>
+                    <p>I can design the site based on your needs and suggestions. I can also design the site from
+                        scratch and
+                        consult you during the job.</p>
+                </div>
+                <div class="px-5 px-5 text-center">
+                    <h5>DEVELOPMENT</h5>
+                    <p>I can design the site based on your needs and suggestions. I can also design the site from
+                        scratch and
+                        consult you during the job.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5 pb-5 pb-5 w-100">
+                <div class="w-25 justify-content-center text-center">
+                    <h5>MAINTENANCE</h5>
+                    <p class="pb-5 pb-4">I can design the site based on your needs and suggestions. I can also design
+                        the site
+                        from scratch and
+                        consult you during the job.</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center pt-5 pb-5">
+                <img src="/blog/static/images/separatorBlack1.png" alt="svg">
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="d-lg-block d-md-none d-sm-none d-xs-none d-none">
+            <div class="d-flex justify-content-around h-100px ">
+                <button type="button"
+                        class="shadow-lg mb-5 p-3 pr- pt-3 pb-3 pl- bg-body-tertiary rounded btn btn-outline-dark px-5 ">
+                    <h1>Skills</h1>
+                </button>
+            </div>
+            <div class="d-flex px-5 px-5 d-lg-block d-md-none d-sm-none d-xs-none d-none">
+                <h2 class="px-5 px-5">USING NOW:</h2>
+            </div>
+            <div class="d-flex pt-5  px-5 px-5 d-lg-block d-md-none d-sm-none d-xs-none d-none">
+                <div class="d-flex justify-content-center flex-wrap ">
+                    <div class="d-flex flex-wrap text-center px-5 px-5 ">
+                        <div class="px-5 ">
+                            <img style="margin-bottom: 15px ;" src="/blog/static/images/html.svg" alt="html">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="px-5 ">
+                            <img style="margin-bottom: 15px ;" src="/blog/static/images/css.svg" alt="css">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="px-5 ">
+                            <img style="margin-bottom: 15px ;" src="/blog/static/images/bootstrap.svg" alt="bootstrap">
+                            <p>BOOTSTRAP</p>
+                        </div>
+                        <div class="px-5 ">
+                            <img style="margin-bottom: 15px ;" src="/blog/static/images/git.svg" alt="git">
+                            <p>GIT</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap text-center px-5 px-5 pt-5">
+                        <div class="px-5 px-5">
+                            <img style="margin-bottom: 15px ;" src="/blog/static/images/figma.svg" alt="html">
+                            <p>FIGMA</p>
+                        </div>
+                        <div class="px-5 px-5">
+                            <img style="margin-bottom: 15px ;" src="/blog/static/images/js.svg" alt="css">
+                            <p>JAVASCRIPT</p>
+                        </div>
+                        <div class="px-5 px-5">
+                            <img style="margin-bottom: 15px ;" src="/blog/static/images/git.svg" alt="git">
+                            <p>GIT</p>
+                        </div>
+                        <div class="px-5 px-5">
+                            <img style="margin-bottom: 15px ;" src="/blog/static/images/bootstrap.svg" alt="bootstrap">
+                            <p>BOOTSTRAP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Portfoilo -->
+            <div class="pt-5 pt-5 pb-5 d-lg-block d-md-none d-sm-none d-xs-none d-none">
+                <div class="d-flex justify-content-around h-100px ">
+                    <button type="button"
+                            class="shadow-lg  p-3  pt-3 pb-3 pl- bg-body-tertiary rounded btn btn-outline-dark ">
+                        <h1>PORTFOLIO</h1>
+                    </button>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center text-center bg-dark pt-5 d-lg-block d-md-none d-sm-none d-xs-none d-none">
+                <div>
+                    <p class="text-light d-lg-block d-md-none d-sm-none d-xs-none d-none">ALL</p>
+                    <button style="height: 5px;" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="0"
+                            class="active mb-5 px-5 px-5" aria-current="true" aria-label="Slide 1"></button>
+                </div>
+                <div>
+                    <p class="text-light d-lg-block d-md-none d-sm-none d-xs-none d-none">CODED</p>
+                    <button style="height: 5px;" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="0"
+                            class="active mb-5 px-5 px-5" aria-current="true" aria-label="Slide 2"></button>
+                </div>
+                <div>
+                    <p class="text-light d-lg-block d-md-none d-sm-none d-xs-none d-none">DESIGNED</p>
+                    <button style="height: 5px;" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="0"
+                            class="active mb-5 mx-5 px-5" aria-current="true" aria-label="Slide 3"></button>
+                </div>
+            </div>
+            <div class="d-lg-block d-md-none d-sm-none d-xs-none d-none">
+                <img class="w-100" src="/blog/static/images/portfolio.png" alt="portfolio">
+            </div>
+            <div class="bg-dark text-light pt-3 pb-2 text-center d-lg-block d-md-none d-sm-none d-xs-none d-none">
+                <p>And many more to come!</p>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+
+            <div class="pt-5 mt-5">
+                <div class="d-flex justify-content-around">
+                    <button type="button"
+                            class="shadow-lg mb-5 p-3 pr- pt-3 pb-3 pl- bg-body-tertiary rounded btn btn-outline-dark px-5">
+                        <h1>CONTACT</h1>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-center text-center">
+                <p class="w-50">Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed
+                    ornare sit amet lorem
+                    sed viverra. In vel urna quis libero viverra facilisis ut ac est.</p>
+            </div>
+
+            <div class="d-flex justify-content-center pt-5 pb-5 mb-5">
+                <img src="/blog/static/images/separatorBlack1.png" alt="svg">
+            </div>
+        </div>
+
+        <h1 class="text-center mt-5 text-dark">Subscribe to Us</h1>
+            <div class="d-flex justify-content-center py-5 mb-5">
+                <form action="{% url 'home' %}" method="POST">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button type="submit" class="btn btn-dark mt-2">Submit</button>
+                </form>
+            </div>
+
+
+
+    </div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+{% endblock %}
