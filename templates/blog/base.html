@@ -23,34 +23,49 @@
 
     {# Link CSS #}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        label, input {
+            display: block;
+        }
+
+        span.helptext {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+<main style="min-height: 100vh;">
 
-{% include 'blog/navbar.html' %}
+    {% include 'blog/navbar.html' %}
 
-<div class="container-fluid">
-    <div class="row">
-        {# left bar#}
-        <div class="col-lg-3 d-lg-block d-md-none d-sm-none d-none">
-            {% block leftbar %}
-            {% endblock %}
-        </div>
-        {#blog#}
-        <div class="col-lg-6 col-md-12">
-            {#Blogs#}
-            {% block content %}
+    {% block home %}
 
-            {% endblock %}
-        </div>
-        {#right bar#}
-        <div class="col-lg-3 d-lg-block d-md-none d-sm-none d-none">
-            {#Categories#}
-            {% block categories %}
+    {% endblock %}
 
-            {% endblock %}
+    <div class="container-fluid">
+        <div class="row">
+            {# left bar#}
+            <div class="col-xl-3  d-xl-inline d-lg-none d-md-none d-sm-none d-xs-none d-none">
+                {% block leftbar %}
+                {% endblock %}
+            </div>
+            {#blog#}
+            <div class="col-xl-6 col-lg-9 col-md-12">
+                {#Blogs#}
+                {% block content %}
+
+                {% endblock %}
+            </div>
+            {#right bar#}
+            <div class="col-xl-3 col-lg-3 d-xl-inline d-lg-inline d-md-none d-sm-none d-xs-none d-none">
+                {#Categories#}
+                {% block categories %}
+
+                {% endblock %}
+            </div>
         </div>
     </div>
-</div>
+</main>
 
 {% include 'blog/footer.html' %}
 
