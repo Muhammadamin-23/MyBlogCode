@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 
+import dj_database_url
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -19,12 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(&a9g)l$6c4s@ea(hcubipuww3n#be%uawi$k^h_-pkg_mtj#w'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-(&a9g)l$6c4s@ea(hcubipuww3n#be%uawi$k^h_-pkg_mtj#w')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
-ALLOWED_HOSTS = []
+HOSTS = os.environ.get('ALLOWED_HOSTS')
+ALLOWED_HOSTS = HOSTS.split(' ') if HOSTS else []
 
 # Application definition
 
@@ -81,6 +84,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+url = 'postgres://postgresdb_voad_user:686t8Tf018UIb2SK0XfGiyoZHDen9AWE@dpg-cnpes1n109ks73ett0qg-a.oregon-postgres.render.com/postgresdb_voad'
+DATABASES_URL = os.environ.get('DATABASES_URL', url)
+DATABASES['default'] = dj_database_url.parse(DATABASES_URL)
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -125,7 +131,6 @@ EMAIL_USE_TLS = True  # Or False if not using TLS
 EMAIL_HOST_USER = 'muhammadaminabduhakimov2000@mail.com'
 EMAIL_HOST_PASSWORD = 'your_email_password'
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
@@ -143,10 +148,11 @@ USE_TZ = True
 LOGIN_REDIRECT_URL = "index"
 LOGOUT_REDIRECT_URL = "index"
 
-STATIC_URL = 'blog/static/'
-STATIC_FILES_DIRS = (BASE_DIR / 'blog/static/')
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_FILES_DIRS = [BASE_DIR / 'blog/static/']
 
-MEDIA_URL = 'media/'  # new
+MEDIA_URL = '/media/'  # new
 MEDIA_ROOT = BASE_DIR / 'media'  # new
 
 # Default primary key field type
