@@ -129,7 +129,7 @@ EMAIL_HOST = "localhost"
 EMAIL_PORT = 1025
 EMAIL_USE_TLS = True  # Or False if not using TLS
 EMAIL_HOST_USER = 'muhammadaminabduhakimov2000@mail.com'
-EMAIL_HOST_PASSWORD = 'your_email_password'
+EMAIL_HOST_PASSWORD = '1234'
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
