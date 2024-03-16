@@ -1,4 +1,5 @@
 {% block home %}
+{% load static %}
 {% include 'blog/navbar.html' %}
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +54,7 @@
     <div class="main d-flex justify-content-around pt-5 pt-5 pb-5">
         <div class="mt-5">
 
-            <img class="mb-5 pb-5 d-lg-block d-md-none d-sm-none d-xs-none d-none" src="/blog/static/images/logo 1.svg"
+            <img class="mb-5 pb-5 d-lg-block d-md-none d-sm-none d-xs-none d-none" src="{% static '/images/logo1.svg' %}"
                  alt="logo">
             <h2>Hi, I am</h2>
             <h1 class="pt-4">Abduhakimov Muhammadamin</h1>
@@ -65,7 +66,7 @@
             </div>
         </div>
         <div class="mt-5 pt-5 d-lg-block d-md-none d-sm-none d-xs-none d-none">
-            <img src="/blog/static/images/photo_2024-02-13_17-42-37.jpg" alt="photo">
+            <img src="{% static '/images/photo_2024-02-13_17-42-37.jpg' %}" alt="photo">
         </div>
     </div>
 
@@ -106,7 +107,7 @@
             <p style="padding-left: 25px;">|</p>
         </div>
         <div class="d-flex justify-content-center pt-5 pb-5 mb-5">
-            <img src="/blog/static/images/separatorBlack1.png" alt="svg">
+            <img src="{% static '/images/separatorBlack1.png' %}" alt="svg">
         </div>
 
         <div>
@@ -135,7 +136,7 @@
             </div>
 
             <div class="d-flex justify-content-center pt-5 pb-5">
-                <img src="/blog/static/images/separatorBlack1.png" alt="svg">
+                <img src="{% static '/images/separatorBlack1.png' %}" alt="svg">
             </div>
         </div>
 
@@ -154,38 +155,38 @@
                 <div class="d-flex justify-content-center flex-wrap ">
                     <div class="d-flex flex-wrap text-center px-5 px-5 ">
                         <div class="px-5 ">
-                            <img style="margin-bottom: 15px ;" src="/blog/static/images/html.svg" alt="html">
+                            <img style="margin-bottom: 15px ;" src="{% static '/images/html.svg' %}" alt="html">
                             <p>HTML5</p>
                         </div>
                         <div class="px-5 ">
-                            <img style="margin-bottom: 15px ;" src="/blog/static/images/css.svg" alt="css">
+                            <img style="margin-bottom: 15px ;" src="{% static '/images/css.svg' %}" alt="css">
                             <p>CSS3</p>
                         </div>
                         <div class="px-5 ">
-                            <img style="margin-bottom: 15px ;" src="/blog/static/images/bootstrap.svg" alt="bootstrap">
+                            <img style="margin-bottom: 15px ;" src="{% static '/images/bootstrap.svg' %}" alt="bootstrap">
                             <p>BOOTSTRAP</p>
                         </div>
                         <div class="px-5 ">
-                            <img style="margin-bottom: 15px ;" src="/blog/static/images/git.svg" alt="git">
+                            <img style="margin-bottom: 15px ;" src="{% static '/images/git.svg' %}" alt="git">
                             <p>GIT</p>
                         </div>
                     </div>
 
                     <div class="d-flex flex-wrap text-center px-5 px-5 pt-5">
                         <div class="px-5 px-5">
-                            <img style="margin-bottom: 15px ;" src="/blog/static/images/figma.svg" alt="html">
+                            <img style="margin-bottom: 15px ;" src="{% static '/images/figma.svg' %}" alt="html">
                             <p>FIGMA</p>
                         </div>
                         <div class="px-5 px-5">
-                            <img style="margin-bottom: 15px ;" src="/blog/static/images/js.svg" alt="css">
+                            <img style="margin-bottom: 15px ;" src="{% static '/images/js.svg' %}" alt="css">
                             <p>JAVASCRIPT</p>
                         </div>
                         <div class="px-5 px-5">
-                            <img style="margin-bottom: 15px ;" src="/blog/static/images/git.svg" alt="git">
+                            <img style="margin-bottom: 15px ;" src="{% static '/images/git.svg' %}" alt="git">
                             <p>GIT</p>
                         </div>
                         <div class="px-5 px-5">
-                            <img style="margin-bottom: 15px ;" src="/blog/static/images/bootstrap.svg" alt="bootstrap">
+                            <img style="margin-bottom: 15px ;" src="{% static '/images/bootstrap.svg' %}" alt="bootstrap">
                             <p>BOOTSTRAP</p>
                         </div>
                     </div>
@@ -224,7 +225,7 @@
                 </div>
             </div>
             <div class="d-lg-block d-md-none d-sm-none d-xs-none d-none">
-                <img class="w-100" src="/blog/static/images/portfolio.png" alt="portfolio">
+                <img class="w-100" src="{% static '/images/portfolio.png' %}" alt="portfolio">
             </div>
             <div class="bg-dark text-light pt-3 pb-2 text-center d-lg-block d-md-none d-sm-none d-xs-none d-none">
                 <p>And many more to come!</p>
@@ -251,7 +252,7 @@
             </div>
 
             <div class="d-flex justify-content-center pt-5 pb-5 mb-5">
-                <img src="/blog/static/images/separatorBlack1.png" alt="svg">
+                <img src="{% static '/images/separatorBlack1.png' %}" alt="svg">
             </div>
         </div>
 
